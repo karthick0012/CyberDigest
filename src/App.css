@@ -1,0 +1,89 @@
+.app-shell {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto 2rem;
+  max-width: 960px;
+  padding: 1.25rem 1.5rem;
+  background: rgba(255,255,255,0.8);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.nav-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.content-area {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero-card,
+.page-card {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(248,250,252,0.9));
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.hero-copy {
+  font-size: 1.1rem;
+  max-width: 60ch;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-card,
+  .page-card {
+    padding: 2rem;
+  }
+}
